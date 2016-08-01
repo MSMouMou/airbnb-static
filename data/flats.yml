@@ -1,0 +1,24 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+mael:
+  owner_name: Mael Singh
+  picture: card-london.jpeg
+  owner_picture: mael.jpg
+  name: Mael's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+jean:
+  owner_name: Jean Anquetil
+  picture: marseille.jpg
+  owner_picture: jean.jpg
+  name: Jean's home
+  summary: Nice flat in Le Vieux Port
+  city: Marseille, FR
+  wifi: true

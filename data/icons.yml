@@ -1,0 +1,12 @@
+dollar:
+  picture: dollar.png
+  description: Pay online
+globe:
+  picture: globe.png
+  description: Discover the world
+heart:
+  picture: heart.png
+  description: Share and love
+beer:
+  picture: beer.png
+  description: Meet people
