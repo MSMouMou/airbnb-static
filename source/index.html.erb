@@ -20,26 +20,13 @@ title: Le Wagon Middleman boilerplate
 </div>
 <div class="container text-center padded features">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <img src="images/globe.png" alt="">
-      <h2>Discover the world</h2>
-      <p>The earth is your new home.</p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <img src="images/dollar.png" alt="">
-      <h2>Pay online</h2>
-      <p>No cash issues anymore.</p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <img src="images/beer.png" alt="">
-      <h2>Meet people</h2>
-      <p>Discover new culture and lifestyle.</p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <img src="images/heart.png" alt="">
-      <h2>Share and love</h2>
-      <p>Join a community you will love.</p>
-    </div>
+    <% data.icon.each do |i| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag icon.picture %>
+        <h2><%= icon.info %></h2>
+        <p>The earth is your new home.</p>
+      </div>
+    <% end %>
   </div>
 </div>
 <div class="wrapper-grey padded">
@@ -120,3 +107,6 @@ var marker = new google.maps.Marker({
 <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<% data.icon.each do |i| %>
+  <%= image_tag icon.picture %>
